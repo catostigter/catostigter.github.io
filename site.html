@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<script>
+$(document).ready(function(){
+
+   $(".slidingDiv").hide();
+   $(".show_hide").show();
+
+   $('.show_hide').toggle(function(){
+       $(".slidingDiv").toggle();
+       
+   },function(){
+       $(".slidingDiv").toggle();
+   });
+    
+});
+</script>
+
+<!-- Stylesheet lightbox -->
+<link rel="stylesheet" href="dist/css/lightbox.min.css">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<title> cato stigter </title>
+<link rel="icon" href="dottie_G.png">
+
+</head>
+
+<body>
+
+
+<div id="head">
+	<img src="IMG/cs.png" alt="Cato Stigter" align="left" >
+</div>
+
+<div id="about">
+	<img src="IMG/cc.png" alt="About" align="right">
+</div>
+
+<p id="aboutcontact">
+	hello, my name is cato, i am a G from haarlem.<br>
+	G ofcourse stands for graphic designer.<br>
+	feel free to contact me any time!<br>
+	<br>
+	+31(6) 43 92 36 48
+	<br>
+	catostigter@live.nl
+</p>
+
+<div id="scrolly">
+
+<section>
+	<div id="poster">
+		<a class="poster-link" href="IMG/poster.gif" data-lightbox="poster" data-title="">
+    		<img class="poster-image" src="IMG/poster_sex.gif" alt="Sexy poster part 1"/>
+    		<p>sexy poster part 1, A2, 2016.</p>
+    	</a>
+</section>
+
+<section>
+	<div id="poster2">
+		<a class="poster2-link" href="IMG/pstr_lamour.png" data-lightbox="poster2" data-title="">
+    		<img class="poster2-image" src="IMG/poster2.jpg" alt="Sexy poster part 2"/>
+    		<p>sexy poster part 2, A2, 2016.</p>
+    	</a>
+</section>
+
+ <section>
+    <div id="publication">
+      <a class="publication-link" href="IMG/1.jpg" data-lightbox="publication" data-title="">
+    		<img class="publication-image" src="IMG/1.png" alt="Publication"/> 
+    		<p>17 objects, 16 pages, A5, 2016.</p>
+    	</a>
+
+      
+
+      <a class="publication-link" href="IMG/13.jpg" data-lightbox="publication" data-title=""></a>
+
+      <a class="publication-link" href="IMG/14.jpg" data-lightbox="publication" data-title=""></a>
+
+      <a class="publication-link" href="IMG/15.jpg" data-lightbox="publication" data-title=""></a>
+
+      <a class="publication-link" href="IMG/16.jpg" data-lightbox="publication" data-title=""></a>
+
+      <a class="publication-link" href="IMG/17.jpg" data-lightbox="publication" data-title=""></a>
+
+      <a class="publication-link" href="IMG/18.jpg" data-lightbox="publication" data-title=""></a>
+
+      <a class="publication-link" href="IMG/19.jpg" data-lightbox="publication" data-title=""></a>
+    </div>
+  </section>
+
+
+<div id="pijl">
+	<img src="IMG/pijl.png" alt="Arrow to the right" style="width:100px;height:34px;">
+</div>
+
+<section>
+	<div id="poster3">
+		<a class="poster3-link" href="IMG/pstr_24.png" data-lightbox="poster3" data-title="">
+    		<img class="poster3-image" src="IMG/pstr_24_K.png" alt="Newspaper poster serie, A2"/>
+    		<p>news paper poster serie, A2, 2016.</p>
+    		</a>
+
+      <a class="poster3-link" href="IMG/pstr_23.png" data-lightbox="poster3" data-title=""></a>
+
+      <a class="poster3-link" href="IMG/pstr_27.png" data-lightbox="poster3" data-title=""></a>
+
+      <a class="poster3-link" href="IMG/pstr_22.png" data-lightbox="poster3" data-title=""></a>
+</section>
+
+<section>
+<div id="bert">
+	<img src="IMG/bert.jpg"  alt="Daddy cool">
+	<div> <p>DADDY COOL</p> </div>
+</div>
+
+<section>
+	<div id="plastic_1">
+		<a class="plastic_1-link" href="IMG/6.png" data-lightbox="plastic_1" data-title="">
+    		<img class="example-image" src="IMG/plastic_1.jpg" alt="Plastic paradise #1"/>
+			<p>pastic paradise, 2016.</p>
+            <a class="plastic_1-link" href="IMG/9.jpg" data-lightbox="plastic_1" data-title=""></a>
+		</a>
+</section>
+
+
+<section>
+	<div id="poster_lunch">
+		<a class="poster_lunch-link" href="IMG/gif.gif" data-lightbox="poster_lunch" data-title="">
+    		<img class="poster_lunch-image" src="IMG/gif_site.gif" alt="Poster lunch lecture, A3"/>
+			<p>poster lunch lecture, A3.</p>
+		</a>
+</section>
+
+<section>
+	<div id="stil_leven">
+		<a class="stil_leven-link" href="IMG/breakfast.png" data-lightbox="stil_leven" data-title="">
+    		<img class="stil_leven-image" src="IMG/dinner.png" alt="still even"/>
+			<p>'still even'.</p>
+		</a>
+</section>
+
+<section>
+	<div id="primary_disko">
+		<a class="primary_disko-link" href="IMG/primary_disko1.png" data-lightbox="primary_disko" data-title="">
+    		<img class="primary-disko-image" src="IMG/primary_disko.png" alt="primary disko"/>
+			<p>'primary disco'.</p>
+		</a>
+</section>
+
+</div>
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+$( "#about" ).click(function() {     
+   $('#aboutcontact').toggle();
+});
+
+</script>
+
+<!-- Lightbox.js -->
+<script src="dist/js/lightbox-plus-jquery.min.js"></script>
+
+<!-- Lightbox options -->
+<script>
+    lightbox.option({
+      'resizeDuration': 100,
+      'wrapAround': true,
+      'disableScrolling': true,
+      'fadeDuration': 1,
+
+    })
+</script>
+
+</body>
+
+</html>
